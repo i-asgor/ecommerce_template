@@ -212,7 +212,7 @@ small {
     color: #ff532b;
 }
 
-col-3 p {
+.col-3 p {
     font-size: 12px;
     margin: 12px 0;
     color: #777;
@@ -313,4 +313,36 @@ ul {
 
 .copyright {
     text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* media query for menu */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li {
+        display: block !important;
+        margin-right: 50px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    nav ul li a {
+        color: #fff !important;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
 }
